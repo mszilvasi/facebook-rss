@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: '*/15 * * * *'  # Automatically runs every 15 minutes
 
+permissions:
+  contents: write  # Ensure the token has write access to the repository
+
 jobs:
   build:
     runs-on: ubuntu-latest
