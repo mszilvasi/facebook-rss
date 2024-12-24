@@ -31,8 +31,9 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
+          git checkout -b rss-updates  # Create a new branch for updates
           git add facebook_feed.xml
           git commit -m "Update RSS feed"
-          git push
+          git push origin rss-updates  # Push the new branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
