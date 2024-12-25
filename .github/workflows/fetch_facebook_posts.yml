@@ -2,8 +2,7 @@ name: Fetch Facebook Posts
 
 on:
   workflow_dispatch:  # Allows manual triggering
-  schedule:
-    - cron: '*/15 * * * *'  # Automatically runs every 15 minutes
+  Automatically runs every 15 minutes
 
 permissions:
   contents: write  # Ensure the token has write access to the repository
